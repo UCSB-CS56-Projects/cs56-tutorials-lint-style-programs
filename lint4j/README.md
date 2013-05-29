@@ -19,3 +19,11 @@ or you could have just one class with a name like Lint4JDemo.java, and have meth
   }
 ```
 
+Also, add to this README.md some advice on how, if you already have a Java project in the style of this course (i.e. with a src directory
+and packages, and a lib directory with the jar for junit.jar, and a build.xml), how to add Lint4J into
+your project's repo.  That probably means:
+
+* download a jar into yoru lib directory
+* add some code to the build.xml
+
+
