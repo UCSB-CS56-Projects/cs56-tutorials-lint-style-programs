@@ -9,7 +9,7 @@ For Example:
 	x = x;
   }
 ```
-In this method this piece of code has no effect.
+In this method this assignment has no effect.
 ```
 	x = x;
 ```
