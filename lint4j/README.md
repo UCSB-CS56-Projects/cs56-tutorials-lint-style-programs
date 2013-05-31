@@ -1,27 +1,28 @@
 # Lint4j
 
-TODO: Put a build.xml in this directory along with some Java Source code that compiles and runs, BUT has "problems" in it
-that Lint4j can detect.
+This project has one source file name Demo.java with a bunch of methods that are named according to a problem that (lint4j) can find.
 
-For example
-
-* if Lint4j can detect unused variables, put in some unused variables.
-* if lint4j can detect BLAH BLAH BLAH, put in some BLAH BLAH BLAH...
-* Put in as many things as you can find, up to the point where it feels like its no longer useful.
-
-You could have multiple classes with names like UnusedVariable.java
-
-or you could have just one class with a name like Lint4JDemo.java, and have methods such as:
-
+For Example:
 ```
-  public void unusedVariable(int x) {
-    // insert some code here
+  public void assignmentNoEffect() {
+	int x = 5;
+	x = x;
   }
 ```
+In this method this piece of code has no effect.
+```
+	x = x;
+```
+Lint4j finds this problem and reports it to you with this dialog.
+```
+   [lint4j] /src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:7: (1): Statement has no effect, possible scoping problem
+```
+It tells you the line that this problem occurs. It also returns a numerical value according to the severity of the problem. The number ranges from 1 to 5 where 5 is the most severe.
 
-Also, add to this README.md some advice on how, if you already have a Java project in the style of this course (i.e. with a src directory
-and packages, and a lib directory with the jar for junit.jar, and a build.xml), how to add Lint4J into
-your project's repo.  That probably means:
+Demo.java has mulitple problems that lint4j can detect. You can view them all by viewing the text file tmp/lint.out Then you look at Demo.java and connect the problems to the line of code lint4j specifies.
+
+
+How to install lint4j to your build.xml
 
 * download a jar and copy it to your lib directory
 The download can be found at http://www.jutils.com/download.html
@@ -49,4 +50,4 @@ Dowload the zip file and extract it. Then copy the lint4j.jar file that is locat
     </lint4j>
   </target>
 ```
-Add this any existing build.xml that is set up in a package structure or it won't work. Make sure the variable (pkgName) is defined to your specific package name. This target is set up to copy the detected problems to tmp/lint.out so your build.xml should reflect that. For ex. clean target deletes tmp/ directory perhaps.
+Add this to any existing build.xml that is set up in a package structure or it won't work. Make sure the variable (pkgName) is defined to your specific package name. This target is set up to copy the detected problems to tmp/lint.out so your build.xml should reflect that. For ex. clean target deletes tmp/ directory.
