@@ -23,7 +23,30 @@ Also, add to this README.md some advice on how, if you already have a Java proje
 and packages, and a lib directory with the jar for junit.jar, and a build.xml), how to add Lint4J into
 your project's repo.  That probably means:
 
-* download a jar into yoru lib directory
+* download a jar and copy it to your lib directory
+The download can be found at http://www.jutils.com/download.html
+Dowload the zip file and extract it. Then copy the lint4j.jar file that is located in the jars/ directory to your projects lib/ directory.
 * add some code to the build.xml
+'''
+  </target> 
+  <taskdef name="lint4j" classname="com.jutils.lint4j.ant.Lint4jAntTask">
+    <classpath>
+      <pathelement location="lib/lint4j.jar" />
+    </classpath>
+  </taskdef>
 
-
+  <target name="lint" description="runs lint4j on source files" >
+    <mkdir dir = "tmp" />
+    <lint4j sourcepath="src"
+	    classpath="lib/junit-4.8.2.jar"
+	    packages="${pkgName}.*"
+	    level="5"
+	    exact="false" >
+      <formatters>
+	<formatter type="text" />
+	<formatter type="text" toFile="tmp/lint.out"/>
+      </formatters> 
+    </lint4j>
+  </target>
+'''
+Add this any existing build.xml that is set up in a package structure or it won't work. Make sure the variable (pkgName) is defined to your specific package name. This target is set up to copy the detected problems to tmp/lint.out so your build.xml should reflect that. For ex. clean target deletes tmp/ directory perhaps.
