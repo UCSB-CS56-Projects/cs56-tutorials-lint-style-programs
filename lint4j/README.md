@@ -27,7 +27,7 @@ your project's repo.  That probably means:
 The download can be found at http://www.jutils.com/download.html
 Dowload the zip file and extract it. Then copy the lint4j.jar file that is located in the jars/ directory to your projects lib/ directory.
 * add some code to the build.xml
-'''
+```
   </target> 
   <taskdef name="lint4j" classname="com.jutils.lint4j.ant.Lint4jAntTask">
     <classpath>
@@ -48,5 +48,5 @@ Dowload the zip file and extract it. Then copy the lint4j.jar file that is locat
       </formatters> 
     </lint4j>
   </target>
-'''
+```
 Add this any existing build.xml that is set up in a package structure or it won't work. Make sure the variable (pkgName) is defined to your specific package name. This target is set up to copy the detected problems to tmp/lint.out so your build.xml should reflect that. For ex. clean target deletes tmp/ directory perhaps.
