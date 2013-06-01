@@ -17,9 +17,9 @@ Lint4j finds this problem and reports it to you with this dialog.
 ```
    [lint4j] /src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:7: (1): Statement has no effect, possible scoping problem
 ```
-It tells you the line that this problem occurs. It also returns a numerical value according to the severity of the problem. The number ranges from 1 to 5 where 5 is the most severe.
+It tells you the line that this problem occurs. It also returns a numerical value according to the severity of the problem. The number ranges from 1 to 5 where 1 is the most severe and 5 is a suggestion.
 
-Demo.java has mulitple problems that lint4j can detect. You can view them all by viewing the text file tmp/lint.out Then you look at Demo.java and connect the problems to the line of code lint4j specifies.
+Demo.java has mulitple problems that lint4j can detect. You can view them all by viewing the text file tmp/lint.out Then you look at Demo.java and connect the problems to the line of code lint4j specifies. Also, Demo.java has comments where lint4j problem occurs.
 
 
 How to install lint4j to your build.xml
