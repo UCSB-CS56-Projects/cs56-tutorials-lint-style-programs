@@ -29,14 +29,13 @@ public class Demo {
 	    b = "Hi";}
     }
     public void comparingFloatingPoints(){
-	float a = 0.1;
-	float b = 1.1;
+	double a = 0.1;
+	double b = 1.1;
 	if(a == b){ // Equality checks with floating point numbers can lead to unexpected behavior
 	    b = 2.2;}
     }
     public static void main (String [] args) {
 	System.out.println("This Compiles and Runs");
-	return 0; // Should not return anything
     }
 
 
