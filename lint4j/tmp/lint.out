@@ -4,5 +4,4 @@
 /home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:22: (2): The equals() method on array types tests identity only, consider using java.util.Arrays.equal()
 /home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:28: (2): Strings should be compared using equals() even if intern()ed.
 /home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:34: (2): Equality checks with floating point numbers can lead to unexpected behavior.
-/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:39: (4): This return statement can be deleted
 /home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:38: (4): Possible debug call "System.out.println" was detected
