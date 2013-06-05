@@ -1,0 +1,7 @@
+/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:7: (1): Statement has no effect, possible scoping problem
+/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:12: (1): This assignment might have been intended to be a comparison.
+/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:15: (1): A method should not have a constructor name.
+/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:22: (2): The equals() method on array types tests identity only, consider using java.util.Arrays.equal()
+/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:28: (2): Strings should be compared using equals() even if intern()ed.
+/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:34: (2): Equality checks with floating point numbers can lead to unexpected behavior.
+/home/alex/z/project/cs56-tutorials-lint-style-programs/lint4j/src/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.java:38: (4): Possible debug call "System.out.println" was detected
