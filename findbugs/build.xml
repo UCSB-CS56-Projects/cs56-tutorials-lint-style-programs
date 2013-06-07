@@ -5,6 +5,8 @@
   <property environment="env"/> <!-- load the environment variables --> 
   <property name="webRoot" value="${env.HOME}/public_html/cs56/13S/${env.USER}" />
 <property name="pkgName" value="edu.ucsb.cs56.projects.tutorials.lint_style_programs" />
+<property name="buildDir" value="edu/ucsb/cs56/projects/tutorials/lint_style_programs" />
+<property name="className" value ="Demo" />
 <property name="course" value="cs56"/>
 <property name="quarter" value="13S"/>
   <property name="webBaseURL" value="http://www.cs.ucsb.edu/~${env.USER}/${course}/${quarter}/${env.USER}" /> 
@@ -77,7 +79,7 @@
               output="text"
               outputFile="tmp/findbugs.text" >
       <auxClasspath path="lib/junit-4.8.2.jar" />
-      <class location="build/edu/ucsb/cs56/projects/tutorials/lint_style_programs/Demo.class" />
+      <class location="build/${buildDir}/${className}.class" />
     </findbugs>
   </target>
 
