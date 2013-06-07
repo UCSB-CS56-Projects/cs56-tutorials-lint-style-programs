@@ -21,7 +21,7 @@ grams.Demo.assignmentNoEffect()  At Demo.java:[line 7]
 It tells you the line that this problem occurs. It also specifies which variable this occured with. In this case it happen with a variable named "a".
 
 Demo.java has mulitple problems that findbugs can detect. You can view them all by viewing the text file tmp/findbugs.text Then you look at Demo.java and connect the problems to the line of code findbugs specifies. Also, Demo.java has comments where problem occurs.
-
+All problems finbugs can find are here http://findbugs.sourceforge.net/bugDescriptions.html
 
 How to install findbugs to your build.xml
 
