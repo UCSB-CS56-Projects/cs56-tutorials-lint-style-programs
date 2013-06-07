@@ -41,4 +41,4 @@ It is not as big as the Findbugs, but it will do.
 
 # Comparison
 
-Lint4j should be the tool that you put into your build.xml It is easier to install since it only needs one jar file and it is faster than Findbugs. Also Lint4j can detect problems in multiple files where Findbugs cannot. Also Lint4j can detect problems in files even before they are compiled. This could give out an error message that is easier to understand than the compiler error message.
+Lint4j should be the tool that you put into your build.xml It is easier to install since it only needs one jar file and it is faster than Findbugs. Also Lint4j can detect problems in multiple files where Findbugs cannot. It is the case that there is more than one file that you are using espcially in object oriented programming. This is why Lint4j is really useful. Also Lint4j can detect problems in files even before they are compiled. This could give out an error message that is easier to understand than the compiler error message. Overall Lint4j is more user-friendly than Findbugs.
