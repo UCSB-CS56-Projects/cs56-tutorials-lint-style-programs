@@ -16,11 +16,11 @@ including Java.  This repo contains this README with summaries about a variety o
 and subdirectories containing sample code.
 
 
-# JLint
+# Findbugs
 
-http://jlint.sourceforge.net/
+http://findbugs.sourceforge.net/
 
-TODO: Fill this in with a summary of what you find out about JLint.
+TODO: Fill this in with a summary of what you find out about Findbugs.
 
 
 # Lint4J
