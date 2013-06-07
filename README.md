@@ -22,10 +22,10 @@ http://findbugs.sourceforge.net/
 
 Findbugs is a great tool to find problems in code. It has a vast array of problems it can detect. All which can be found here 
 http://findbugs.sourceforge.net/bugDescriptions.html
-Speed - Slower than Lint4j
-Installing to your build requires multiple jars.
-Output of Problems found - only a file
-Number of files it can check - 1 file
+* Speed - Slower than Lint4j
+* Installing to your build requires multiple jars.
+* Output of Problems found - only a file
+* Number of files it can check - 1 file
 
 # Lint4J
 
@@ -34,10 +34,10 @@ http://www.jutils.com/
 Lint4j is a great tool to add to your current project. It can detect a good amount of problems in your code. Here is the link
 http://www.jutils.com/features.html
 It is not as big as the Findbugs, but it will do.
-Speed - Faster than Findbugs
-Installing to your build only requires one jar.
-Output of Problems found - System.out and optional file
-Number of files it can check - As much as you want
+* Speed - Faster than Findbugs
+* Installing to your build only requires one jar.
+* Output of Problems found - System.out and optional file
+* Number of files it can check - As much as you want
 
 # Comparison
 
