@@ -15,6 +15,11 @@ The "lint" utility was originally developed on Unix for C programming.   Lint-li
 including Java.  This repo contains this README with summaries about a variety of such utilities,
 and subdirectories containing sample code.
 
+project history
+===============
+```
+ N/A
+```
 
 # Findbugs
 
